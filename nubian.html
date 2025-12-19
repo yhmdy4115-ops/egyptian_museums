@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متحف النوبة | أسوان</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --nubian-earth: #8d6e63;
+            --nubian-sand: #fdf5e6;
+            --nubian-dark: #3e2723;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--nubian-sand);
+            color: var(--nubian-dark);
+            font-weight: 300;
+        }
+
+        .minimal-nav {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .header-clean {
+            padding: 150px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('nubian.jpg') center/cover;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .header-clean h1 {
+            font-weight: 800;
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+        }
+
+        .header-clean p {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .content-card-nubian {
+            background: #fff;
+            border-radius: 20px;
+            padding: 60px;
+            margin-top: -80px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            position: relative;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--nubian-earth);
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .minimal-gallery-item {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.4s;
+            border: 1px solid transparent;
+        }
+
+        .minimal-gallery-item:hover {
+            border-color: var(--nubian-earth);
+            background: #fafafa;
+        }
+
+        .minimal-gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: #fdfdfd;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .nubian-footer {
+            padding: 60px 0;
+            text-align: center;
+            background: #fff;
+            margin-top: 100px;
+        }
+
+        .btn-minimal {
+            background: var(--nubian-dark);
+            color: #fff;
+            border-radius: 50px;
+            padding: 12px 35px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn-minimal:hover {
+            background: var(--nubian-earth);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="minimal-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="text-decoration-none fw-bold text-dark fs-3">متحف النوبة</a>
+            <a href="index.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold">العودة للرئيسية</a>
+        </div>
+    </nav>
+
+    <header class="header-clean">
+        <div class="container">
+            <h1>أرض الذهب</h1>
+            <p>حيث تُحفظ ثقافة النوبة التي تمتد لآلاف السنين</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-card-nubian">
+            <div class="row g-5">
+                <div class="col-8">
+                    <span class="section-tag">قصة الحفظ</span>
+                    <h2 class="fw-bold mb-4">حصن التراث الأسواني</h2>
+                    <p class="fs-5 lh-lg mb-5">يعد متحف النوبة بأسوان نموذجاً رائعاً للهندسة المعمارية الحديثة التي
+                        تستقي إلهامها من الروح النوبية. تم افتتاحه في عام 1997 ضمن الحملة الدولية لإنقاذ آثار النوبة،
+                        ويضم آلاف القطع التي تحكي قصة بلاد الذهب منذ ما قبل التاريخ.</p>
+
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="minimal-gallery-item shadow-sm">
+                                <img src="nubian_ramses.jpg" alt="تمثال الملك رمسيس الثاني بمتحف النوبة">
+                                <h6 class="fw-bold">تمثال رمسيس الثاني</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="minimal-gallery-item shadow-sm">
+                                <img src="nubian_life.jpg" alt="نماذج توضح الحياة النوبية التقليدية">
+                                <h6 class="fw-bold">نماذج الحياة النوبية</h6>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="minimal-gallery-item shadow-sm">
+                                <img src="nubian_garden.jpg" alt="الحدائق المتحفية الخارجية بالأسوان"
+                                    style="height: 400px;">
+                                <h6 class="fw-bold">الحدائق المتحفية بأسوان</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="p-4 border-start">
+                        <h4 class="fw-bold mb-4">دليل الزيارة</h4>
+                        <div class="mb-4">
+                            <p class="text-muted small mb-1">المكان</p>
+                            <p class="fw-bold">مدينة أسوان، بجوار حديقة فريال</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-muted small mb-1">المواعيد</p>
+                            <p class="fw-bold">يومياً من 9 صباحاً حتى 5 مساءً</p>
+                        </div>
+                        <a href="https://egymonuments.gov.eg/ar/museums/nubian-museum" target="_blank"
+                            class="btn btn-minimal w-100 mt-3">الموقع الرسمي</a>
+
+                        <div class="mt-5 pt-5 text-center opacity-50">
+                            <p class="small mb-0"><b>بوابة التراث النوبي</b></p>
+                            <p class="small">بوابة تعليمية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="nubian-footer">
+        <div class="container">
+            <p class="mb-0 small">متاحف مصر &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متحف الأقصر للفن | جوهرة الصعيد</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --luxor-accent: #d4af37;
+            --luxor-dark: #121212;
+            --luxor-bg: #fff;
+        }
+
+        body {
+            font-family: 'Amiri', serif;
+            background-color: var(--luxor-bg);
+            color: var(--luxor-dark);
+        }
+
+        .luxor-hero-visual {
+            height: 60vh;
+            background: url('luxor.jpg') center/cover;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .luxor-hero-visual::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+
+        .luxor-hero-visual h1 {
+            position: relative;
+            color: var(--luxor-accent);
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        .art-card {
+            border: none;
+            padding: 40px;
+            background: #fdfdfd;
+            border-right: 2px solid var(--luxor-accent);
+            margin-bottom: 40px;
+        }
+
+        .art-card h2 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .artistic-floating-info {
+            background: var(--luxor-dark);
+            color: #fff;
+            padding: 30px;
+            border-radius: 0;
+            border-top: 10px solid var(--luxor-accent);
+            position: sticky;
+            top: 100px;
+        }
+
+        .catalog-img-wrapper {
+            width: 100%;
+            height: 350px;
+            background: #fafafa;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .catalog-img-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .footer-art {
+            border-top: 5px solid var(--luxor-accent);
+            padding: 50px 0;
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold" href="index.html" style="color: var(--luxor-accent);">متحف الأقصر
+                للفن</a>
+            <div class="ms-auto">
+                <a href="index.html" class="btn btn-outline-warning rounded-0 px-4 fw-bold">العودة للرئيسية</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="luxor-hero-visual">
+        <div class="container">
+            <h1 class="display-1">طيبة القديمة</h1>
+            <p class="text-white fs-3">تحفة فنية تطل على ضفاف النيل</p>
+        </div>
+    </header>
+
+    <main class="container py-5 mt-5">
+        <div class="row g-5">
+            <div class="col-9">
+                <article class="art-card">
+                    <h2>جوهرة الصعيد</h2>
+                    <p class="fs-4 lh-lg">يعد متحف الأقصر من أجمل المتاحف الإقليمية في مصر، حيث تم افتتاحه في عام 1975.
+                        يتميز المتحف بأسلوب عرض فني رفيع يركز على جماليات القطع الأثرية وتاريخها الممتد، وليس فقط عددها.
+                    </p>
+                </article>
+
+                <div class="row g-5 mt-4">
+                    <div class="col-6 text-center">
+                        <div class="catalog-img-wrapper"><img src="luxor_amenhotep.jpg"
+                                alt="تمثال رائع للملك أمنحتب الثالث"></div>
+                        <h4 class="fw-bold">الملك أمنحتب الثالث</h4>
+                        <p class="text-muted small">من أبرز مقتنيات المتحف</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="catalog-img-wrapper"><img src="luxor_thutmose.jpg"
+                                alt="رأس الملك تحتمس الثالث من الكوارتزيت"></div>
+                        <h4 class="fw-bold">الملك تحتمس الثالث</h4>
+                        <p class="text-muted small">فن النحت في الدولة الحديثة</p>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                        <div class="catalog-img-wrapper" style="height: 450px;"><img src="luxor_akhenaten.jpg"
+                                alt="تمثال الملك إخناتون الهائل">
+                        </div>
+                        <h4 class="fw-bold">تمثال الملك إخناتون الهائل</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="artistic-floating-info shadow-lg">
+                    <h5 class="fw-bold mb-4" style="font-family: 'Cairo'; color: var(--luxor-accent);">زيارة المتحف</h5>
+                    <div class="mb-4">
+                        <p class="small opacity-75 mb-1">المواعيد</p>
+                        <p class="fw-bold mb-0">9:00 - 2:00 | 5:00 - 9:00</p>
+                    </div>
+                    <div class="mb-5">
+                        <p class="small opacity-75 mb-1">الموقع</p>
+                        <p class="fw-bold fs-6">كورنيش النيل، الأقصر</p>
+                    </div>
+                    <a href="https://egymonuments.gov.eg/ar/museums/luxor-museum" target="_blank"
+                        class="btn btn-warning w-100 rounded-0 fw-bold">الموقع الرسمي</a>
+
+                    <div class="mt-5 pt-3 border-top border-secondary text-center">
+                        <p class="small text-muted mb-0">بوابة الأقصر الثقافية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-art text-center">
+        <div class="container">
+            <p class="mb-0 fw-bold">تراثنا أمانة - متاحف مصر &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتحف المصري الكبير | البوابة الرسمية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --gem-gold: #c5a059;
+            --gem-blue: #1a2a44;
+            --gem-white: #ffffff;
+            --gem-gray: #f8fafc;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--gem-gray);
+            color: var(--gem-blue);
+            line-height: 1.8;
+        }
+
+        .gem-hero {
+            position: relative;
+            height: 85vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('gem.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gem-white);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .gem-hero__content {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .gem-hero__title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+        }
+
+        .gem-info-card {
+            background: var(--gem-white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .gem-info-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid var(--gem-gold);
+        }
+
+        .gem-info-card__icon {
+            font-size: 2.5rem;
+            color: var(--gem-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .gem-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 25px;
+            border: 1px solid #e2e8f0;
+            height: 100%;
+            text-align: center;
+        }
+
+        .gem-image {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 15px;
+            background: #fafafa;
+        }
+
+        .gem-official-banner {
+            background: var(--gem-blue);
+            color: #fff;
+            padding: 60px 40px;
+            border-radius: 30px;
+            margin: 80px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .gem-button {
+            padding: 1.2rem 3rem;
+            background: var(--gem-gold);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .gem-button:hover {
+            background: #fff;
+            color: var(--gem-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html" style="color: var(--gem-blue);">متاحف مصر</a>
+            <div class="ms-auto"><a href="index.html" class="btn btn-outline-dark rounded-pill fw-bold px-4">العودة
+                    للرئيسية</a></div>
+        </div>
+    </nav>
+
+    <header class="gem-hero">
+        <div class="gem-hero__content container">
+            <h1 class="gem-hero__title">المتحف المصري الكبير</h1>
+            <p class="fs-3 mb-5">أضخم مشروع ثقافي أثري في العالم</p>
+            <a href="https://visit-gem.com/" target="_blank" class="gem-button fs-5 shadow-lg">احجز تذكرتك الرسمية
+                الآن</a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-4 mb-5">
+            <div class="col-4">
+                <div class="gem-info-card text-center h-100">
+                    <i class="fas fa-history gem-info-card__icon"></i>
+                    <h3>بداية الحلم</h3>
+                    <p class="text-muted small">مركز عالمي للحضارة المصرية القديمة.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="gem-info-card text-center h-100">
+                    <i class="fas fa-map-marker-alt gem-info-card__icon"></i>
+                    <h3>موقع استراتيجي</h3>
+                    <p class="text-muted small">بجوار أهرامات الجيزة الخالدة.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="gem-info-card text-center h-100">
+                    <i class="fas fa-monument gem-info-card__icon"></i>
+                    <h3>100 ألف قطعة</h3>
+                    <p class="text-muted small">تجمع كامل مقتنيات الملك توت.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 mt-5">
+            <div class="col-12">
+                <section class="bg-white p-5 rounded-4 shadow-sm text-center">
+                    <h2 class="display-5 fw-bold mb-4" style="color: var(--gem-gold);">الإبداع المعماري</h2>
+                    <p class="fs-4 text-muted mx-auto" style="max-width: 900px;">تم تصميم واجهة المتحف على شكل مثلثات
+                        ترمز للأهرامات، لتدمج المبنى مع طبيعة المنطقة الصحراوية المحيطة، مما يجعله تحفة فنية هندسية تليق
+                        بعظمة الآثار التي يحتضنها.</p>
+                </section>
+            </div>
+
+            <div class="col-6">
+                <div class="gem-item shadow-sm"><img src="gem_tut.jpg" class="gem-image mb-3"
+                        alt="القناع الذهبي للملك توت عنخ آمون">
+                    <h4>القناع الذهبي للملك توت عنخ آمون</h4>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="gem-item shadow-sm"><img src="gem_thumb.jpg" class="gem-image mb-3"
+                        alt="تمثال رمسيس الثاني العظيم بالبهو">
+                    <h4>تمثال الملك رمسيس الثاني العظيم</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="gem-official-banner shadow-lg text-center text-md-start">
+            <div>
+                <h2 class="fw-bold mb-2">خطة زيارتك</h2>
+                <p class="mb-0 opacity-75">يفتح المتحف أبوابه يومياً من الساعة 9:00 صباحاً وحتى 5:00 مساءً.</p>
+            </div>
+            <div class="mt-4 mt-md-0">
+                <a href="https://visit-gem.com/" target="_blank" class="gem-button">الموقع الرسمي للحجز</a>
+            </div>
+        </div>
+
+        <div class="text-center py-5 border-top opacity-50 small">بوابة متاحف مصر - منصة تعليمية وتاريخية</div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5 text-center">
+        <p class="mb-0 small">جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
